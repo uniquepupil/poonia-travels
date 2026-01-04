@@ -37,7 +37,7 @@ const slides = [
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
-  const phoneNumber = "9828XXXXXXXX"; // Replace with Poonia Transportation Sikar number
+  const phoneNumber = "9991963215"; // Replace with Poonia Transportation Sikar number
 
   useEffect(() => {
     const timer = setInterval(() => {

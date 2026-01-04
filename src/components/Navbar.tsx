@@ -9,7 +9,7 @@ export default function Navbar() {
   // Helper to handle closing menu on click
   const closeMenu = () => setIsOpen(false);
 
-  const phoneNumber = "91XXXXXXXXXX"; // Replace with Poonia Transportation's Sikar contact
+  const phoneNumber = "9991963215"; // Replace with Poonia Transportation's Sikar contact
 
   return (
     <div className="fixed top-4 inset-x-0 z-[100] px-4 md:px-8">

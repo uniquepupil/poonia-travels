@@ -17,7 +17,7 @@ export default function Home() {
     "alternateName": "Poonia Logistics Sikar",
     "description": "Leading industrial transportation service in Sikar, Rajasthan. Specialized in full truckload (FTL) cargo movement across India with a 50+ fleet of containers and open trucks.",
     "url": "https://your-domain.com",
-    "telephone": "+919828XXXXXXXX", // Replace with your actual Sikar number
+    "telephone": "+919991963215", // Replace with your actual Sikar number
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Industrial Area Bypass",

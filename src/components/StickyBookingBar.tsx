@@ -9,7 +9,7 @@ interface StickyContactBarProps {
 }
 
 export default function StickyContactBar({ 
-  phone = "9828XXXXXXXX", // Replace with Poonia Transportation Sikar number
+  phone = "9991963215", // Replace with Poonia Transportation Sikar number
   whatsappMsg = "Hi Poonia Transportation, I am interested in booking a truck for cargo movement from Sikar.",
 }: StickyContactBarProps) {
   

@@ -3,7 +3,7 @@ import { FaPhone, FaMapMarkerAlt, FaWhatsapp, FaTruck, FaGlobeAmericas, FaShield
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const phoneNumber = "9828XXXXXXXX"; // Replace with Poonia Transportation Sikar number
+  const phoneNumber = "9991963215"; // Replace with Poonia Transportation Sikar number
 
   return (
     <footer className="bg-stone-950 text-stone-400 pt-16 pb-8 border-t border-white/5">

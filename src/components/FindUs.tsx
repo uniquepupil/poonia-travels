@@ -2,7 +2,7 @@
 import { FaMapMarkerAlt, FaPhone, FaDirections, FaTruck, FaGlobeAmericas, FaRoad } from 'react-icons/fa';
 
 export default function FindUs() {
-  const phoneNumber = "9828XXXXXXXX"; // Poonia Transportation Sikar Contact
+  const phoneNumber = "9991963215"; // Poonia Transportation Sikar Contact
   const mapUrl = "https://maps.google.com"; // Add your actual Google Maps Link here
 
   return (
