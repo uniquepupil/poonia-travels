@@ -1,89 +1,71 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Menu from "@/components/Menu";
-import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 import FindUs from "@/components/FindUs";
-import Booking from "@/components/Booking";
 import About from "@/components/About";
 import StickyBookingBar from "@/components/StickyBookingBar";
-import Activities from "@/components/Activities";
-import Nearby from "@/components/Nearby";
 import FleetSpecs from "@/components/FleetSpecs";
 import QuoteForm from "@/components/QuoteForm";
 import SafetyTech from "@/components/SafetyTech";
 
 export default function Home() {
-  // SEO Structured Data - Optimized for "Nongore Villa Budge Budge"
+  // SEO Structured Data - Optimized for "Poonia Transportation Sikar"
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Hotel", 
-    "name": "Nongore Villa - Riverside Estate",
-    "alternateName": "Villa Nongore Budge Budge",
-    "description": "Luxury 20,000 sq. ft. riverside villa in Budge Budge, Kolkata. Premium wedding venue for 700+ guests and luxury stay with 280º Ganges views.",
-    "image": [
-      "https://nongorevilla.netlify.app/images/hero-ganges.jpg", 
-      "https://nongorevilla.netlify.app/images/wedding-lawn.jpg"
-    ],
-    "@id": "https://nongorevilla.netlify.app",
-    "url": "https://nongorevilla.netlify.app",
-    "telephone": "+919836863206",
+    "@type": "LogisticsService", 
+    "name": "Poonia Transportation",
+    "alternateName": "Poonia Logistics Sikar",
+    "description": "Leading industrial transportation service in Sikar, Rajasthan. Specialized in full truckload (FTL) cargo movement across India with a 50+ fleet of containers and open trucks.",
+    "url": "https://your-domain.com",
+    "telephone": "+919828XXXXXXXX", // Replace with your actual Sikar number
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Budge Budge Riverside, near Achipur",
-      "addressLocality": "Budge Budge",
-      "addressRegion": "West Bengal",
-      "postalCode": "700137",
+      "streetAddress": "Industrial Area Bypass",
+      "addressLocality": "Sikar",
+      "addressRegion": "Rajasthan",
+      "postalCode": "332001",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 22.4816, // Budge Budge area coordinates
-      "longitude": 88.1824 
+      "latitude": 27.6094,
+      "longitude": 75.1397 
     },
-    "starRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "priceRange": "₹₹₹₹",
-    "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Ganges River View", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Private Chef Service", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Wedding Lawn (700 pax)", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Dolphin Spotting Point", "value": "true" }
-    ]
+    "areaServed": "India",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Transport Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Truckload (FTL) Logistics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Containerized Cargo Movement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Heavy Transit" } }
+      ]
+    }
   };
 
   return (
     <>
-      {/* Inject Structured Data for Google SEO */}
+      {/* Inject Structured Data for Logistics SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <main className="min-h-screen selection:bg-amber-600 selection:text-white bg-white">
+      {/* Changed selection color to Orange for industrial theme */}
+      <main className="min-h-screen selection:bg-orange-600 selection:text-white bg-white">
         <Navbar />
         
-        {/* Visual & Narrative Sections */}
+        {/* Heavy Industry Layout */}
         <Hero />
         <About />
         <FleetSpecs />
-        <QuoteForm />
         <SafetyTech />
-        {/* Bento Grid Experience (Updated for Riverside/Wildlife) */}
-        {/* <Activities /> */}
-       
-        {/* Culinary & Visual Showcase (Ganges Bistro & Private Chef) */}
-        {/* <Menu />
-        <PhotoGallery /> */}
+        <QuoteForm />
         
-        {/* Booking & Location Logistics (Updated for 2L Booking & Budge Budge Map) */}
-        {/* <Booking /> */}
-        {/* <Nearby /> */}
+        {/* Logistics Hub Location */}
         <FindUs />
         
-        {/* Floating conversion element */}
+        {/* Contact conversion elements */}
         <StickyBookingBar />
         
         <Footer />

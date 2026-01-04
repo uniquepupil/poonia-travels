@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Pacifico, Caveat, Great_Vibes } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,31 +12,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const pacifico = Pacifico({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-pacifico",
-});
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-caveat",
-});
-
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-great-vibes",
-});
+// Note: Cursive fonts (Pacifico, Caveat, Great Vibes) removed to maintain a professional B2B industrial aesthetic.
 
 export const metadata: Metadata = {
-  // Replace with your chosen custom domain once purchased
-  metadataBase: new URL("https://nongorevilla.netlify.app"), 
+  // Update this to your actual domain later
+  metadataBase: new URL("https://pooniatransport.uniquepupil.in/"), 
   title: {
-    default: "Nongore Villa | Luxury Riverside Estate & Wedding Venue Budge Budge",
-    template: "%s | Nongore Villa Ganges",
+    default: "Poonia Transportation | Leading Logistics & Fleet Services in Sikar",
+    template: "%s | Poonia Transportation Sikar",
   },
-  description: "Experience the majesty of the Ganges at Nongore Villa. A 20,000 sq. ft. private estate in Budge Budge perfect for destination weddings, heritage stays, and luxury riverside retreats since 2014.",
+  description: "Poonia Transportation offers reliable Full Truckload (FTL) and industrial logistics services across India. Based in Sikar, Rajasthan, we provide a 50+ fleet for secure and timely cargo movement since 2008.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -47,32 +32,32 @@ export const metadata: Metadata = {
     ],
   },
   keywords: [
-    "Nongore Villa Budge Budge", 
-    "Riverside Wedding Venue Kolkata", 
-    "Luxury Villa near Ganges", 
-    "Best Destination Wedding Lawn Kolkata", 
-    "Nongore Villa Contact Number", 
-    "Private Estate Stay West Bengal", 
-    "Riverside Resort South 24 Parganas"
+    "Poonia Transportation Sikar", 
+    "Best Logistics Company Sikar", 
+    "Truck Booking Service Rajasthan", 
+    "Full Truckload FTL Sikar", 
+    "Industrial Cargo Transport India", 
+    "Poonia Transport Contact Number", 
+    "Heavy Vehicle Container Service Sikar"
   ],
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://nongorevilla.netlify.app",
-    siteName: "Nongore Villa Riverside Estate",
-    title: "Nongore Villa | Luxury By The Ganges",
-    description: "Nestled on the banks of the Ganges, Nongore Villa offers 280º river views, bespoke wedding facilities for 700+ guests, and a 20,000 sq. ft. private sanctuary.",
+    url: "https://pooniatransport.uniquepupil.in/",
+    siteName: "Poonia Transportation Sikar",
+    title: "Poonia Transportation | Industrial Logistics Experts",
+    description: "Secure and efficient cargo movement across India. Specialized in industrial freight from our Sikar dispatch hub.",
     images: [{ 
-      url: "/laptop/1.webp", // Pointing to the Ganges view image
+      url: "/transportation/2.webp", // Recommended to have a professional truck fleet image here
       width: 1200, 
       height: 630, 
-      alt: "Panoramic Ganges View from Nongore Villa" 
+      alt: "Poonia Transportation Fleet Sikar" 
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nongore Villa Riverside Estate Budge Budge",
-    images: ["/laptop/11.webp"],
+    title: "Poonia Transportation Sikar | National Logistics",
+    images: ["/transportation/og-image.webp"],
   },
 };
 
@@ -87,9 +72,6 @@ export default function RootLayout({
         className={`
           ${geistSans.variable} 
           ${geistMono.variable} 
-          ${pacifico.variable} 
-          ${caveat.variable} 
-          ${greatVibes.variable} 
           antialiased font-sans bg-white text-stone-900
         `}
       >
