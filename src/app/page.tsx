@@ -9,6 +9,9 @@ import About from "@/components/About";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import Activities from "@/components/Activities";
 import Nearby from "@/components/Nearby";
+import FleetSpecs from "@/components/FleetSpecs";
+import QuoteForm from "@/components/QuoteForm";
+import SafetyTech from "@/components/SafetyTech";
 
 export default function Home() {
   // SEO Structured Data - Optimized for "Nongore Villa Budge Budge"
@@ -65,17 +68,19 @@ export default function Home() {
         {/* Visual & Narrative Sections */}
         <Hero />
         <About />
-        
+        <FleetSpecs />
+        <QuoteForm />
+        <SafetyTech />
         {/* Bento Grid Experience (Updated for Riverside/Wildlife) */}
-        <Activities />
+        {/* <Activities /> */}
        
         {/* Culinary & Visual Showcase (Ganges Bistro & Private Chef) */}
-        <Menu />
-        <PhotoGallery />
+        {/* <Menu />
+        <PhotoGallery /> */}
         
         {/* Booking & Location Logistics (Updated for 2L Booking & Budge Budge Map) */}
-        <Booking />
-        <Nearby />
+        {/* <Booking /> */}
+        {/* <Nearby /> */}
         <FindUs />
         
         {/* Floating conversion element */}
